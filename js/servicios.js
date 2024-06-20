@@ -83,7 +83,7 @@ Bton1.style.borderRadius = '5px';
 Bton1.style.marginTop = '120px';
 
 Bton1.addEventListener('click', function() {
-    window.location.href = 'http://127.0.0.1:5500/index.html';
+    window.location.href = 'reservar cita.html';
 });
 
 divBton.appendChild(Bton1);
@@ -152,7 +152,7 @@ Bton2.style.borderRadius = '5px';
 Bton2.style.marginTop = '100px';
 
 Bton2.addEventListener('click', function() {
-    window.location.href = 'http://127.0.0.1:5500/index.html';
+    window.location.href = 'reservar cita.html';
 });
 
 divBton2.appendChild(Bton2);
