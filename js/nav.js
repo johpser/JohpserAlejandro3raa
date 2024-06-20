@@ -4,7 +4,7 @@ nav.appendChild(ul);
 navegacion.className = 'navbar';
 
 
-ORIGEN.href = 'https://johpser.github.io/JohpserAlejandro3raa/index.html';
+ORIGEN.href = 'index.html';
 ORIGEN.appendChild(img);
 img.src = 'logo.png';
 img.alt = 'cerebro';
