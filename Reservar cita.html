@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Cita</title>
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <div><h1>Reservar Cita</h1></div>
+
+    <div id="formulario">
+        <form id="datos">
+            <div>
+                <label for="tipoDocumento">Tipo de Documento: </label>
+                <select id="tipoDocumento" name="tipoDocumento" required>
+                    <option value="">SELECCIONE UN TIPO DE DOCUMENTO</option>
+                    <option value="DNI">DNI</option>
+                    <option value="CE">CE</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="numeroDocumento">Número de Documento: </label>
+                <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+            </div>
+
+            <div>
+                <label for="nombre">Nombre y Apellido: </label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+
+            <div>
+                <label for="correo">Correo: </label>
+                <input type="email" name="correo" id="correo" required>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" name="telefono" id="telefono" required>
+            </div>
+
+            <div>
+                <label for="atencion">Tipo de Atención: </label>
+                <select id="atencion" name="atencion" required>
+                    <option value="">SELECCIONE UN TIPO DE ATENCIÓN</option>
+                    <option value="TERAPIA DE PAREJA">TERAPIA DE PAREJA</option>
+                    <option value="INTERVENCIÓN EN ADICCIONES Y USO DE SUSTANCIAS PSICOACTIVAS">INTERVENCIÓN EN ADICCIONES Y USO DE SUSTANCIAS PSICOACTIVAS</option>
+                    <option value="ATENCIÓN PSICOLÓGICA EN TRANSTORNOS DE PERSONALIDAD">ATENCIÓN PSICOLÓGICA EN TRANSTORNOS DE PERSONALIDAD</option>
+                    <option value="ATENCIÓN DE PROBLEMAS EMOCIONALES, ANSIEDAD/DEPRESIÓN, TRASTORNO DE PÁNICO">ATENCIÓN DE PROBLEMAS EMOCIONALES, ANSIEDAD/DEPRESIÓN, TRASTORNO DE PÁNICO</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="fecha">Fecha de Atención: </label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div>
+                <label for="horario">Horario de Atención: </label>
+                <select id="horario" name="horario" required>
+                    <option value="">SELECCIONE UN HORARIO</option>
+                    <option value="9:00AM - 10:00AM">9:00AM - 10:00AM</option>
+                    <option value="10:00AM - 11:00AM">10:00AM - 11:00AM</option>
+                    <option value="11:00AM - 12:00PM">11:00AM - 12:00PM</option>
+                    <option value="12:00PM - 01:00PM">12:00PM - 01:00PM</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" value="Reservar Cita" id="reservarBtn">
+                <button type="button" id="limpiarBtn">Limpiar</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="mensaje"><h2></h2></div>
+    
+    <div id="citasRegistradas"></div>
+
+    <button id="consultarBtn">Consultar Cita por Documento</button>
+    <div id="consultaResult"></div>
+
+    <button id="nuevaCitaBtn">Generar Nueva Cita</button>
+
+    <footer></footer>
+    <!-- Scripts de JS  -->
+    <script src="js/general.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/agendar.js"></script>
+</body>
+</html>
