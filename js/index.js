@@ -41,7 +41,7 @@ let textIndexAt5 = document.createElement("p");
 let textButtonInd = document.createElement("a");
 
 textIndexAt2.textContent = "Atención presencial y online";
-textButtonInd.href = 'https://paletadecolores.online/vintage/';
+textButtonInd.href = 'reservar cita.html';
 textButtonInd.textContent = 'RESERVAR CITA';
 textButtonInd.style.color = 'inherit'; 
 textButtonInd.style.textDecoration = 'none';
@@ -95,7 +95,7 @@ texinfo2.style.marginTop = '35px';
 const botonIndex2 = document.createElement("button");
 let textButton2 = document.createElement("a");
 
-textButton2.href = 'http://127.0.0.1:5500/biografia.html';
+textButton2.href = 'biografia.html';
 textButton2.textContent = 'CONOCER MAS';
 textButton2.style.color = 'inherit'; 
 textButton2.style.textDecoration = 'none';
